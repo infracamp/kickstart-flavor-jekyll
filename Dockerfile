@@ -14,6 +14,8 @@ ENV TIMEZONE Europe/Berlin
 ENV KICKSTART_HYPERVISE_HOST="http://kickstart-hypervise/"
 
 ENV KICK_HTTP_PORT "80"
+ENV KICK_PAGE_DIR "/opt/docs"
+ENV KICK_OUT_DIR "/tmp/_build"
 
 ENV DEV_MODE "0"
 ENV DEV_CONTAINER_NAME "unnamed"
