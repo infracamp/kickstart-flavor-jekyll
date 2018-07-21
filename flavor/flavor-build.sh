@@ -12,7 +12,7 @@ apt-get -y install libxml2-dev ruby-full ruby-bundler gem
 
 gem install jekyll jekyll-optional-front-matter
 
-
+cd /kickstart/flavor && bundle install
 
 
 
