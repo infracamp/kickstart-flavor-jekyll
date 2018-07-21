@@ -4,7 +4,6 @@ LABEL maintainer="Matthias Leuffen <m@tth.es>"
 ADD / /kickstart
 RUN chmod -R 755 /kickstart
 
-RUN env
 RUN /kickstart/flavorkit/template/base-install-ubuntu.sh
 RUN /kickstart/flavorkit/scripts/build.sh
 RUN /kickstart/flavor/flavor-build.sh
