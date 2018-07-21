@@ -1,18 +1,16 @@
 
 # kickstart-flavor jekyll :: Jekyll Github Pages development container
 
-see (http://github.com/infracamp/kickstart) for more information.
+Jekyll is a static website generator used by github pages. This container
+lets you on the fly develop websites.
 
-Document Index:
+- [Jekyll Documentation](https://jekyllrb.com/docs/home/)
+- [GitHub Pages Docs](https://pages.github.com/)
+- [Skel Project](https://github.com/infracamp/kickstart-skel/blob/master/jekyll-base/)
 
 - [Dockerhub page](https://hub.docker.com/r/infracamp/kickstart-flavor-jekyll/)
-    - [Tags available](https://hub.docker.com/r/infracamp/kickstart-flavor-gaia/tags/)
-    - [Build details](https://hub.docker.com/r/infracamp/kickstart-flavor-gaia/builds/)
-
-## About this project
-
-This Repo delivers the tools used by any kickstart flavor container.
-It is included by Git submodule.
+    - [Tags available](https://hub.docker.com/r/infracamp/kickstart-flavor-jekyll/tags/)
+    - [Build details](https://hub.docker.com/r/infracamp/kickstart-flavor-jekyll/builds/)
 
 
 ## Container specific `.kick.yml`-directives
@@ -22,7 +20,11 @@ It is included by Git submodule.
 | `page_dir`     | `/opt/docs`          | The jekyll site root path |
 | `out_dir`      | `/tmp/_build`        | The output directory |
 
-## Installed Software
+## Skeleton *([Code](https://github.com/infracamp/kickstart-skel/tree/master/jekyll-base))*
 
+Install a demo page (including config-file etc.) from [kickstart-skel](http://github.com/infracamp/kickstart-skel)
 
+```
+./kickstart.sh --skel jekyll-base
+```
 
