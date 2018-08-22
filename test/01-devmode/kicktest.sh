@@ -75,7 +75,7 @@ _KICKSTART_CURRENT_VERSION="1.1.1"
 KICKSTART_WIN_PATH=""
 
 # Publish ports - separated by semikolon (define it in .kickstartconfig)
-KICKSTART_PORTS="80:4200/tcp"
+KICKSTART_PORTS="80:80/tcp"
 # KICKSTART_PORTS="80:4200/tcp;81:4450/udp"
 
 KICKSTART_DOCKER_OPTS=""

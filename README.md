@@ -12,13 +12,21 @@ lets you on the fly develop websites.
     - [Tags available](https://hub.docker.com/r/infracamp/kickstart-flavor-jekyll/tags/)
     - [Build details](https://hub.docker.com/r/infracamp/kickstart-flavor-jekyll/builds/)
 
+Jekyll comes with an Apache webserver. So you can deploy this container as 
+Static homepage not only for github-pages but as standalone server too. 
 
 ## Container specific `.kick.yml`-directives
 
-| Key | Default | Description |
-|----------------|----------------|---------------------|
-| `page_dir`     | `/opt/docs`          | The jekyll site root path |
-| `out_dir`      | `/tmp/_build`        | The output directory |
+Demo kick.yml content:
+
+```
+command:
+  build:
+    - "jekyll build -s /opt/docs -d /var/www/html"
+    
+  dev:
+    - "jekyll watch -s /opt/docs -d /var/www/html --force_polling"
+```
 
 ## Skeleton *([Code](https://github.com/infracamp/kickstart-skel/tree/master/jekyll-base))*
 
