@@ -14,8 +14,8 @@ gem install jekyll jekyll-optional-front-matter
 
 cd /kickstart/flavor && bundle install
 
-echo "ErrorDocument 404 /errors/404.html" >> /etc/apache2/apache2.conf
-echo "ErrorDocument 500 /errors/500.html" >> /etc/apache2/apache2.conf
+echo "ErrorDocument 404 /404.html" >> /etc/apache2/apache2.conf
+
 
 
 chown -R user /var/www
