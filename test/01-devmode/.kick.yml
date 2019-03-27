@@ -3,8 +3,6 @@
 version: 1
 from: "infracamp/kickstart-flavor-jekyll:testing"
 
-
-
 command:
   build:
     - "jekyll build -s /opt/docs -d /var/www/html"

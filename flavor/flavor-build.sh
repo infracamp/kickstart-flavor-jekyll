@@ -7,7 +7,7 @@
 
 set -e
 
-
+apt-get update
 apt-get -y install libxml2-dev ruby-full ruby-bundler gem apache2
 
 gem install jekyll jekyll-optional-front-matter

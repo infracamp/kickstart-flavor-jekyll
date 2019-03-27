@@ -1,13 +1,8 @@
 # Developing this container
 
-## Git submodules
+## Building the container
 
-```
-git submodule update --init --recursive --remote
-```
-
-Do this before you push things. dockerhub will pull exacly the same
-submodules version you have in this repository.
+go to `test/01-devmode` and run `./kickstart.sh`
 
 
 ## Dockerhub integration
@@ -21,4 +16,4 @@ In docker there should be following build-settings:
 |--------|---------------|---------------------|-----------------|
 | Branch | master        | /                   | testing         |
 | Tag    | `/^[0-9.]+$/` | /                   | latest          |
-| Tag    | `/^[0-9.]+$/` | /                   | release-{sourceref} |
+| Tag    | `/^[0-9.]+$/` | /                   | {sourceref} |
