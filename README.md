@@ -1,5 +1,5 @@
 
-# kickstart-flavor jekyll :: Jekyll Github Pages development container
+# kickstart-flavor jekyll :: Jekyll (~>3.8) Github Pages development container
 
 [![Docker Build status](https://img.shields.io/docker/cloud/build/infracamp/kickstart-flavor-jekyll.svg)](https://cloud.docker.com/repository/docker/infracamp/kickstart-flavor-jekyll/builds)
 [![Docker Pulls](https://img.shields.io/docker/pulls/infracamp/kickstart-flavor-jekyll.svg)](https://github.com/infracamp/kickstart-flavor-jekyll)

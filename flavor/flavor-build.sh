@@ -10,7 +10,7 @@ set -e
 apt-get update
 apt-get -y install libxml2-dev ruby-full ruby-bundler gem apache2
 
-gem install jekyll jekyll-optional-front-matter
+gem install "jekyll:~>3.0" jekyll-optional-front-matter
 
 cd /kickstart/flavor && bundle install
 
