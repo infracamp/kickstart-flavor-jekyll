@@ -36,6 +36,21 @@ command:
 ### Apache2
 
 
+### Deploy the container
+
+The flavor comes with integrated apache2.4 webserver. Do build the container create a `Dockerfile`:
+
+```
+FROM infracamp/kickstart-flavor-jekyll:testing
+
+ADD / /opt
+RUN ["bash", "-c",  "chown -R user /opt"]
+RUN ["/kickstart/flavorkit/scripts/start.sh", "build"]
+
+ENTRYPOINT ["/kickstart/flavorkit/scripts/start.sh", "standalone"]
+```
+
+
 ## Skeleton *([Code](https://github.com/infracamp/kickstart-skel/tree/master/jekyll-base))*
 
 Install a demo page (including config-file etc.) from [kickstart-skel](http://github.com/infracamp/kickstart-skel)
@@ -43,4 +58,7 @@ Install a demo page (including config-file etc.) from [kickstart-skel](http://gi
 ```
 ./kickstart.sh --skel jekyll-base
 ```
+
+
+
 

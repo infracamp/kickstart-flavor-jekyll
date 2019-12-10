@@ -21,7 +21,7 @@ echo
 cat <<\EOF >> /etc/apache2/apache2.conf
 
 <Directory /var/www/html>
-        Options -Indexes FollowSymLinks
+        Options FollowSymLinks
         AllowOverride All
         ErrorDocument 404 /404.html
 </Directory>
