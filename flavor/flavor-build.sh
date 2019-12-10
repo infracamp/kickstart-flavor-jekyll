@@ -14,7 +14,20 @@ gem install "jekyll:~>3.0" jekyll-optional-front-matter
 
 cd /kickstart/flavor && bundle install
 
-echo "ErrorDocument 404 /404.html" >> /etc/apache2/apache2.conf
+
+echo
+
+
+cat <<\EOF >> /etc/apache2/apache2.conf
+
+<Directory /var/www/html>
+        Options -Indexes FollowSymLinks
+        AllowOverride All
+        ErrorDocument 404 /404.html
+</Directory>
+
+
+EOF
 
 
 
